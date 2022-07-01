@@ -1,7 +1,125 @@
 :root {
-    --body-bg-color: #121214;
-    --text-color: #E1E1E6;
-    --title-color: #04D361;
-    --form-color: #A8A8A8;
-    --bg-button-color: #8257e5;
-  }
+  --body-bg-color: #121214;
+  --text-color: #E1E1E6;
+  --title-color: #04D361;
+  --form-color: #A8A8A8;
+  --bg-button-color: #8257e5;
+}
+
+* {
+  margin: 0;
+  color: var(--text-color);
+}
+
+body {
+  display: flex;
+  background-color: #04D361;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: var(--body-bg-color);
+  padding: 1.8rem;
+}
+
+.logoimg {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+
+  margin-bottom: 10rem;
+}
+
+.title {
+  color: #04D361;
+  font-family: 'Work Sans', 'sans-serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+}
+
+.comment {
+  color: white;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.comment2 {
+  color: var(--form-color);
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.title, .comment, .comment2 {
+  margin: .5rem;
+}
+
+.insertemail {
+  color: #A8A8A8;
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  margin-top: 4rem;
+  margin-bottom: 1.3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: none;
+  border-left: solid .3rem #04D361;
+
+  width: 80rem;
+  height: 3rem;
+}
+
+.input {
+  display: flex;
+  filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+button {
+  background-color: #8257e5;
+  width: 5rem;
+  border: none;
+  padding-top: 4px;
+}
+
+a {
+  color: var(--bg-button-color);
+  font-family: 'League Spartan', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+
+  margin-top: 3rem;
+  width: 17rem;
+}
+
+aside {
+  height: 100vh;
+  width: 50%;
+
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 80%;
+}
